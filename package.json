@@ -1,0 +1,22 @@
+{
+  "name": "templatenode",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "author": "Olha Bevziuk",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "lite": "^4.0.5",
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.7.2"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "mustache": "^2.3.0"
+  }
+}

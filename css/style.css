@@ -1,0 +1,454 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  text-transform:uppercase;
+  
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+ }
+
+/*
+rgb(235, 73, 51) orange
+rgb(49, 170, 222) blue
+rgb(19, 116, 184) dblue */
+
+
+.tabcontent{
+  top: 7vh;
+  position: absolute;
+  height: 95vh;
+}
+#Home{
+  height: 200vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  /* background-color: grey; */
+}
+
+ .eventPict{
+  background-image: url('../img/B1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  width: 100vw;
+  height: 40vh;
+}
+
+#eventName{
+color: white;
+background-color: rgba(255, 255, 255, 0.5);
+position: absolute;
+text-align: center;
+text-transform:uppercase;
+width: 100vw;
+top: 10vh;
+}
+
+
+#Home h4{
+  position: relative;
+  top: 15vh;
+  font-size: 3em;
+  color: rgb(137, 146, 153);
+  margin: 5px;
+  padding: 5px;
+}
+
+#Home p{
+  position: relative;
+  top: 15vh;
+  margin: 15px;
+  padding: 15px;
+}
+
+
+#contact{
+  background-color: rgb(19, 116, 184);
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  background-image: url("../img/A6.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: opacity(0.5);
+  height: 30vh;
+  width: 100vw;
+  text-transform:uppercase;
+  position: absolute;
+  bottom: 0vh;
+  margin: 0;
+  padding: 0;
+}
+
+.social{
+  width: 10vw;
+  height: 7vh;
+  margin: 1%;
+  padding: 0;
+  text-decoration: none;
+}
+
+/*-----------------------------------------GENERAL----------------------------*/
+
+ul {
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+  height: 100px; }
+
+li {
+  background: yellow;
+  height: 15vh;
+  min-height: 50px;
+  margin-top: 10px;
+  width: 88vw;
+  float: left;
+  border: 1px solid black;
+  height: 100%;
+  /*padding-left: 0;*/
+  margin-left: 0;
+}
+
+.title{
+  text-align: center;
+}
+
+/*------------------------------------------SCHEDULE PAGE----------------------------------------------------*/
+
+#schedule{
+  background-color: #f1f1f1;
+}
+
+
+/*-----------------------------EVENT LI------------------------------------*/
+/*The style for the div where the icon in li*/
+.imageclass{
+  float:left;
+  width: 30%;
+  background-color: white;
+  display: block;
+  height:inherit;
+}
+
+/* PART 1: IMAGE. The style for the icon in li by itself*/
+.iconimg{
+  zoom: 2;  //increase if you have very small images
+  display: block;
+  margin-left:20%;
+  margin-top:5%;
+  height: auto;
+  max-height: 50%;
+  width: auto;
+  max-width: 100%;
+}
+
+/*PART 2: INFO. This class contains the info about the event in li*/
+.info{
+  background-color: rgb(49, 170, 222);
+  float:left;
+  font-size: 1.3vw;
+  font-size: 10px;
+  width: 70%;
+  height: 100%;
+  /*padding-left: 1px;*/
+}
+
+/*----------------------------------EVENT DETAILS---------------------------------*/
+/*Two divs to organise Back and Event buttons: |BACK|                |Going| */
+.buttonLeft{
+  float: left;
+}
+
+.buttonRight{
+  float: right;
+  margin-right:5%;
+}
+
+/*IMAGE OF THE EVENT*/
+.eventimg{
+  zoom: 2;  //increase if you have very small images
+  display: block;
+//  margin-left:20%;
+  margin-top:5%;
+  height: auto;
+  max-height: 50%;
+  width: auto;
+  max-width: 100%;
+}
+
+/*---------------------------------------------------SPEAKERS PAGE--------------------------------------*/
+
+/*Backgroung for the page*/
+#Speakers {
+  background-color: #f1f1f1;
+}
+
+/*----------------------------SPEAKERS LI-----------------------------------------------------------------*/
+.speaker {
+  height:3vh;
+  padding-top: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+/*----------------------------SPEAKER DETAILS-----------------------------------------------------------------*/
+/*DIV WITH THE IMAGE*/
+.speakerimage{
+  margin-top: 7px;
+}
+
+/*DIV THAT CONTAINS SPEAKER INFO*/
+.text{
+  padding-left: 7%;
+}
+
+/*IMAGE BY ITSELF*/
+.speakerimg{
+  zoom: 2;  //increase if you have very small images
+  display: block;
+//  margin-left:20%;
+  margin-top:5%;
+  height: auto;
+  max-height: 50%;
+  width: auto;
+  max-width: 100%;
+}
+
+/*---------------------------------------------BUTTONS-------------------------------------------------*/
+
+button{
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid grey;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 14px;
+  text-decoration: none;
+  float: left;
+  //margin-top: 10%;
+  //margin-left: 20%;
+
+}
+
+/*ATTEND EVENT BUTTON(RED)*/
+.Attend {
+  background-color: rgb(235, 73, 51);
+  color: #ffffff;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+/*GOING EVENT BUTTON(GREEN)*/
+.Going {
+  background-color: rgb(190, 222, 49);
+  color: #ffffff;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+/*SELECTED DAY BUTTON. WHEN YOU CLICK ON DAY BUTTON THE CLASS IS IMPLEMENTED(GREEN COLOUR)*/
+.selectedDay {
+  background-color: rgb(235, 73, 51);
+  color: #ffffff;
+  margin-left: 4px;
+ }
+
+/*NOT SELECTED DAY BUTTON (WHITE COLOUR)*/
+ .notSelectedDay {
+   background-color: rgb(49, 170, 222);
+   color: black;
+   margin-left: 4px;
+  }
+
+/*BACK BUTTON IN EVENT DETAILS*/
+.backButtonEvent {
+  background-color: white;
+  color: black;
+  margin-top: 10%;
+  margin-left: 20%;
+ }
+
+/*BACK BUTTON IN SPEAKERS DETAILS*/
+ .backButtonSpeaker {
+   background-color: white;
+   color: black;
+   margin-top: 5%;
+  // margin-left: 20%;
+  }
+
+/*----------------------------------------------------------TABS---------------------------------------------------------------------------*/
+.tab {
+  top: 0;
+  overflow: hidden;
+  position: fixed;
+  z-index: 5;
+  left: 0vw;
+  width: 100vw;
+  border: 0px solid #ccc;
+  background-color: rgb(19, 116, 184);
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  border-radius: 0px;
+  width: 33.22%; }
+  .tab button:hover {
+    background-color: rgb(235, 73, 51); }
+  .tab button:active {
+    background-color: #ffffff; }
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  /* border: 1px solid #ccc;
+  border-top: none; */
+  height: 90vh; }
+
+
+  /* #### Tablets Portrait  #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait) {
+  #schedule{
+    background-color: red;
+  }
+
+  /*The style for the div where the icon in li*/
+  .imageclass{
+    float:left;
+    width: 23%;
+    background-color: white;
+    display: block;
+    height:inherit;
+  }
+
+  /* PART 1: IMAGE. The style for the icon in li by itself*/
+  .iconimg{
+    zoom: 2;    /* increase if you have very small images */
+    display: block;
+    margin-left:25%;
+    margin-top:5%;
+    height: auto;
+    max-height: 50%;
+    width: auto;
+    max-width: 100%;
+  }
+
+  /*PART 2: INFO. This class contains the info about the event in li*/
+  .info{
+    background-color: orange;
+    float:left;
+    font-size: 1.1em;
+    width: 77%;
+    height: 100%;
+    /*padding-left: 1px;*/
+  }
+
+  li {
+    background: yellow;
+    height: 13vh;
+    min-height: 50px;
+    margin-top: 10px;
+    width: 95vw;
+    float: left;
+    border: 1px solid black;
+    //height: 100%;
+    /*padding-left: 0;*/
+    margin-left: 0;
+  }
+
+button{
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    cursor: pointer;
+    color: black;
+    font-family: Arial;
+    font-size: 1.5em;
+
+  }
+
+
+
+
+}
+
+/* #### Tablets landscape  #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
+
+label{
+  font-size: 1.7em;
+}
+
+#schedule{
+  background-color: green;
+
+}
+
+/*The style for the div where the icon in li*/
+.imageclass{
+  float:left;
+  width: 23%;
+  background-color: white;
+  display: block;
+  height:inherit;
+}
+
+/* PART 1: IMAGE. The style for the icon in li by itself*/
+.iconimg{
+  zoom: 2;  //increase if you have very small images
+  display: block;
+  margin-left:5%;
+  margin-top:7%;
+  height: auto;
+  max-height: 50%;
+  width: auto;
+  max-width: 100%;
+}
+
+/*PART 2: INFO. This class contains the info about the event in li*/
+.info{
+  background-color: orange;
+  float:left;
+  font-size: 1em;
+  width: 77%;
+  height: 100%;
+  /*padding-left: 1px;*/
+}
+
+li {
+  background: yellow;
+  height: 15vh;
+  min-height: 50px;
+  margin-top: 10px;
+  width: 95vw;
+  float: left;
+  border: 1px solid black;
+  //height: 100%;
+  /*padding-left: 0;*/
+  margin-left: 0;
+}
+
+button{
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid #18ab29;
+  cursor: pointer;
+  color: black;
+  font-family: Arial;
+  font-size: 1.2em;
+
+}
+}

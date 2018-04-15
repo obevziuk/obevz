@@ -1,0 +1,112 @@
+$white: #ffffff;
+
+body{
+  background: $white;
+}
+
+ul{
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+  height: 10px;
+}
+
+li{
+  background:yellow;
+  height: 15vh;
+  min-height: 50px;
+  margin-top: 10px;
+  width:95vw;
+  float:left;
+}
+
+.Attend {
+	background-color:red;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:1px solid #18ab29;
+	//display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+  margin-left: 4px;
+	text-decoration:none;
+  float: left;
+  margin-top: 50px;
+}
+
+
+
+.selectedDay{
+  background-color:#44c767;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  border-radius:15px;
+  border:1px solid #18ab29;
+  //display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:14px;
+  margin-left: 4px;
+  text-decoration:none;
+
+}
+
+.Going{
+  background-color:#44c767;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  border-radius:15px;
+  border:1px solid #18ab29;
+  //display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:14px;
+  margin-left: 4px;
+  text-decoration:none;
+  float: left;
+  margin-top: 50px;
+}
+
+
+
+.eventbtn{
+  float: left;
+  margin-top: 50px;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    width:33.22%;
+
+    &:hover {
+      background-color: #ffffff;
+    }
+
+    &:active {
+      background-color: #ffffff;
+    }
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    height: 95vh;
+}

@@ -1,0 +1,58 @@
+{
+  "speakers":[
+    {
+      "about":"Brand Designer, Co-founder, Eye Design",
+      "index":0,
+      "name": "CLAUDIA EL-MOOR",
+      "url":"https://www.behance.net/claudiaelmoor"
+    },
+    {
+      "about":"Information Designer, Cofounder, Accurat",
+      "index":1,
+      "name": "GIORGIA LUPI",
+      "url":"http://giorgialupi.com/"
+    },
+    {
+      "about":"Associate Director, New Venture Creation, University of Guelph",
+      "index":2,
+      "name": "DANA McCAULEY",
+      "url":"https://twitter.com/danamccauley"
+    },
+    {
+      "about":"Creative Director, MakeLab",
+      "index":3,
+      "name": "JONATHAN MONETA",
+      "url":"https://twitter.com/jmonets"
+    },
+    {
+      "about":"Artist",
+      "index":4,
+      "name": "NAVID NATHOO",
+      "url":"http://www.theksociety.com/"
+    },
+    {
+      "about":"Executive Director",
+      "index":5,
+      "name": "NORMAN WHITE",
+      "url":"http://torontodigifest.ca/2018/speakers2018/"
+    },
+    {
+      "about":"Director",
+      "index":6,
+      "name": "Shantell Martin",
+      "url":"http://www.shantellmartin.com/"
+    },
+    {
+      "about":"Media Artist",
+      "index":7,
+      "name": "Jeremy Bailey",
+      "url":"https://www.freshbooks.com/"
+    },
+    {
+      "about":"Artist",
+      "index":8,
+      "name": "Ron White",
+      "url":"https://www.firstborn.com/"
+    }
+  ]
+}

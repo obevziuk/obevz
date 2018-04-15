@@ -1,0 +1,182 @@
+<!--
+Olha Bevziuk
+INM320
+for Christopher Lewis
+016234155
+November 30, 2017
+Template
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title> Template</title>
+		<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyBhn-hvtNBmp53MCespB9HBfKqpEdlNbBg",
+		    authDomain: "mobileapp-284de.firebaseapp.com",
+		    databaseURL: "https://mobileapp-284de.firebaseio.com",
+		    projectId: "mobileapp-284de",
+		    storageBucket: "",
+		    messagingSenderId: "908396379669"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+		<script src="node_modules/mustache/mustache.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+		<style>
+	@import url('https://fonts.googleapis.com/css?family=Roboto');
+		</style>
+	</head>
+<body>
+	<!-- Tab links -->
+	<div class="tab">
+	  <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+	  <button class="tablinks" onclick="openTab(event, 'schedule')" id="defaultOpen">Schedule</button>
+	  <button class="tablinks" onclick="openTab(event, 'Speakers')">Speakers</button>
+	</div>
+
+	<!-- Tab content -->
+
+	<!--    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! HOME PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+	<div id="Home" class="tabcontent">
+		 <div class=eventPict></div>
+			<section id="eventName">
+			<h2>April 26-28, 2018</h2>
+		  <h3>Corus quay, Toronto, ON</h3>
+		</section>
+			<h4> Welcome to Digifest 2018 </h4>
+			<p>
+				Digifest is a tech festival and startup event, organized annually by the Digital Media and Gaming Incubator at George Brown College. Digifest brings together thought leaders, entrepreneurs, designers, students and creative together to sharing compelling digital content in the interactive, gaming and design industries.
+				<br><br> This year’s theme, Hello Tomorrow: Our Creative Cities is about improving our quality of life and making creative cities of the future better through design, innovation, and technology. As the world’s population soars to almost 10 billion people by 2050, up from today’s 7.5 billion, challenges around urban spaces, food priorities, health, education, mobility and work will make us look at how innovative thinking today will shape our world tomorrow.
+				<br><br> Digifest will feature emerging technology and highlight stories from around the globe using tech to tackle challenges in cities.
+			</p>
+		<section id="contact">
+			<h5> contact us </h5>
+			<a  href="https://www.facebook.com/digifestTO/"> <img class="social" src="img/fb1.png"> </a>
+			</section>
+	</div>
+
+	<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SCHEDULE PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+	<div id="schedule" class="tabcontent">
+	  <h3 class="title">Schedule</h3>
+		<button class="selectedDay" id="day1btn" onclick="displayByDay('26 April')">26 APRIL</button>
+		<button id="day2btn" onclick="displayByDay('27 April')">27 APRIL</button>
+		<label><input type='checkbox' onclick='displayByStatus(this);' id="filterCheckBox">My Schedule</label>
+
+		<script id="mustacheTemplate" type="x-tmpl-mustache">
+			<ul>
+				{{#events}}
+					<li>
+						<div class="imageclass">
+							<img src="img/A6.png" class="iconimg">
+							<button onclick="changeEventStatus(event)" data-index="{{index}}" class="{{status}}">{{status}}</button>
+						</div>
+						<div class="info" data-eventId="{{index}}" onclick="displayEventDetails(event)">
+							<div class="text">
+								<h3 data-eventId="{{index}}" onclick="displayEventDetails(event)">{{title}}</h3>
+								<p data-eventId="{{index}}" onclick="displayEventDetails(event)">by {{speaker}}</p>
+								<p data-eventId="{{index}}" onclick="displayEventDetails(event)">{{time}}, {{room}}</p>
+							<div/>
+						</div>
+					</li>
+				{{/events}}
+			</ul>
+		</script>
+		<!-- placeholder for dynamic json data -->
+		<div id="output"></div>
+	</div>
+
+	<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! EVENT DETAILS PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+	<div id="eventDetails" class="tabcontent">
+		<script id="eventDetailsMustacheTemplate" type="x-tmpl-mustache">
+			{{#events}}
+			<div>
+		    <div class="buttonLeft">
+					<button class="backButtonEvent" onclick="openTab(event, 'schedule')">Back</button>
+		    </div>
+	    	<div class="buttonRight">
+					<button onclick="changeEventStatus(event)" data-index="{{index}}" class="{{status}}">{{status}}</button>
+		    </div>
+			</div>
+				<div class="eventimage">
+					<img src="{{img}}" class="eventimg">
+				</div>
+				<h2 class="title">{{title}}</h2>
+				<p class="title"> by {{speaker}}</p>
+				<p>{{date}} {{time}}, {{room}}</p><hr>
+				<p> {{about}} </p>
+			{{/events}}
+		</script>
+		<!-- placeholder for dynamic json data -->
+		<div id="eventDetailsOutput"></div>
+	</div>
+
+	<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SPEAKERS PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+	<div id="Speakers" class="tabcontent">
+		<h3 class="title">Speakers</h3>
+		<!-- mustache template -->
+		<script id="speakersMustacheTemplate" type="x-tmpl-mustache">
+		<ul>
+			{{#speakers}}
+				<li class="speaker" data-speakerId="{{index}}" data-speakerName="{{name}}" onclick="displaySpeakerDetails(event)">
+				{{name}}
+				</li>
+			{{/speakers}}
+		</ul>
+		</script>
+		<!-- placeholder for dynamic json data -->
+		<div id="speakersOutput"></div>
+	</div>
+
+	<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SPEAKER DETAILS PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+	<div id="speakerDetails" class="tabcontent">
+
+		<!-- SPEAKER DETAILS -->
+		<button class="backButtonSpeaker" onclick="openTab(event, 'Speakers')">Back</button>
+		<script id="speakerDetailsMustacheTemplate" type="x-tmpl-mustache">
+			{{#speakers}}
+			<div class="speakerimage">
+				<img src="{{img}}" class="speakerimg">
+				</div>
+				<h2 class="title">{{name}}</h2>
+				<p>{{about}}</p>
+				<p>Site: {{url}}</p>
+			{{/speakers}}
+		</script>
+		<div id="speakerDetailsOutput"></div>
+
+		<!-- SPEAKER'S EVENTS -->
+		<script id="speakerEventsMustacheTemplate" type="x-tmpl-mustache">
+			<ul>
+				{{#events}}
+					<li>
+						<div class="imageclass">
+							<img src="img/index.png" class="iconimg">
+							<button onclick="changeEventStatus(event)" data-index="{{index}}" class="{{status}}">{{status}}</button>
+						</div>
+						<div class="info">
+							<div class="text">
+								<h3>{{title}}</h3>
+								<p>{{date}}</p>
+								<p>{{time}}, {{room}}</p>
+							</div>
+						</div>
+					</li>
+				{{/events}}
+			</ul>
+		</script>
+		<div id="speakerEventsOutput"></div>
+	</div>
+
+</body>
+</html>

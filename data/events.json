@@ -1,0 +1,104 @@
+{
+  "events":[
+    {
+      "about": "Claudia El-moor is a Brazilian Graphic Designer and Co-founder of Eye Design – Desenvolvimento de Marcas, which is located in Brasilia, the modernist planned capital of Brazil. Her branding boutique helps entrepreneurs reach and keep their ideal customers using communication design as a strategic tool. Claudia is passionate about communication, marketing and design thinking, using her problem-solving skills to bring out the best of each business to the market.",
+      "date":"26 April",
+      "index":0,
+      "room":"Room 1",
+      "speaker":"CLAUDIA EL-MOOR",
+      "status":"Going",
+      "time":"4:00 pm",
+      "title":"Eye Design – Desenvolvimento de Marcas"
+    },
+    {
+      "about": "Giorgia Lupi is an award-winning information designer and a cofounder of Accurat, a data-driven design firm with offices in Milan and New York, where she is the design director. She has a PhD in design from Politecnico di Milano, and is coauthor of the aspirational, hand-drawn data-visualization book Dear Data (Princeton Architectural Press/Penguin Random House).",
+      "date":"26 April",
+      "index":1,
+      "room":"Room 2",
+      "speaker":"GIORGIA LUPI",
+      "status":"Going",
+      "time":"3:00 pm",
+      "title":"Items: Is Fashion Modern? "
+    },
+    {
+      "about": "Dana McCauley was recognized as one of Canada’s Most Powerful Women in 2017 for her leadership and ability to inspire others. Her public profile includes speaking at national and International food industry events and a judge for seasons one and two of reality TV show Recipe to Riches. Dana was the founding Executive Director of Food Starter, a food business incubator and accelerator that has been recognized with a Premier’s Award for Innovation Excellence. Their clients have launched over 80 product lines and created +160 food sector jobs",
+      "date":"26 April",
+      "index":2,
+      "room":"Room 1",
+      "speaker":"DANA McCAULEY",
+      "status":"Attend",
+      "time":"4:00 pm",
+      "title":"Food Starter, a food business incubator and accelerator"
+    },
+    {
+      "about": "Jonathan Moneta is the Creative Director at MakeLab, a studio of designers, technologists, and logistics professionals who create and facilitate pop-up and hands-on interactivities for events. MakeLab started three years ago when they took eight 3D printers to a Toronto bar and taught design until the last call. Since then they have taken their laser cutters, light tables, and edible photo booths out of the lab, inventing ways to spark wonder and creativity in unexpected places.",
+      "date":"27 April",
+      "index":3,
+      "room":"Room 2",
+      "speaker":"JONATHAN MONETA",
+      "status":"Attend",
+      "time":"4:00 pm",
+      "title":"Engaging people through teaching innovative design from small to large events around the world"
+    },
+    {
+      "about": "Claudia El-moor is a Brazilian Graphic Designer and Co-founder of Eye Design – Desenvolvimento de Marcas, which is located in Brasilia, the modernist planned capital of Brazil. Her branding boutique helps entrepreneurs reach and keep their ideal customers using communication design as a strategic tool. Claudia is passionate about communication, marketing and design thinking, using her problem-solving skills to bring out the best of each business to the market. ",
+      "date":"27 April",
+      "index":4,
+      "room":"Room 2",
+      "speaker":"CLAUDIA EL-MOOR",
+      "status":"Attend",
+      "time":"4:00 pm",
+      "title":"Marketing and design thinking, using problem-solving skills to bring out the best of each business to the market."
+    },
+    {
+      "about": "Navid Nathoo is the Founder and Executive Director of The Knowledge Society, which focuses on exposing young people to exponential technologies and sciences, such as artificial intelligence, blockchain, genomics, and brain-machine interfaces.  Navid was also the founder and CEO of Airpost a leading AI-based cloud security company based in Silicon Valley. Airpost was later acquired by Box in 2015. Post-acquisition, Navid leads product for multiple large product groups at Box, which included overseeing product technologies in machine learning, big data, and advanced security.",
+      "date":"27 April",
+      "index":5,
+      "room":"Room 2",
+      "speaker":"NAVID NATHOO",
+      "status":"Attend",
+      "time":"4:00 pm",
+      "title":"Exposing young people to exponential technologies and sciences"
+    },
+    {
+      "about": "Norman White is a new media artist who is a pioneer in the use of electronic technology and robotics in art. He started his career as a painter. In the late 60’s, he began experimenting with electronics and created electrical art machines in order to better model the often unpredictable behavior of dynamic systems, especially that of living organisms.",
+      "date":"27 April",
+      "index":6,
+      "room":"Room 1",
+      "speaker":"NORMAN WHITE",
+      "status":"Attend",
+      "time":"12:00 pm",
+      "title":"Electronic technology and robotics in art"
+    },
+    {
+      "about": "Jeremy Bailey is a Toronto-based self-proclaimed famous new media artist, creative director for product at FreshBooks and visiting faculty at NYU Tandon’s Mobile AR Lab. Since the early noughties Bailey has ploughed a compelling, and often hilarious, road through the various developments of digital communications technologies. Bailey has performed and exhibited all over the world, from bathrooms in Buffalo to museums in Moscow.",
+      "date":"27 April",
+      "index":7,
+      "room":"Room 1",
+      "speaker":"Jeremy Bailey",
+      "status":"Attend",
+      "time":"13:00 pm",
+      "title":"Realness – Design Thinking for Agile"
+    },
+    {
+      "about": "Shantell’s work is a meditation of lines; a language of characters, faces and messages that invite her viewers to share a role in her creative process. Part autobiographical, and part dreamlike-whimsy, she’s created her own world that bridges fine art, commercial and the everyday experience — conversations, objects and places.",
+      "date":"27 April",
+      "index":8,
+      "room":"Room 2",
+      "speaker":"Shantell Martin",
+      "status":"Attend",
+      "time":"16:00 pm",
+      "title":"Art and Money : The Key to Making a Living"
+    },
+    {
+      "about": "As a Sr. 3D Artist, Ron collaborates with our creative leads and developers to bring engaging animation, graphics and creative concepts to life for Firstborn’s ever-growing content development studio. Alongside the rest of the team, he executes the visual direction and style for much of the work coming out of the department. Ron Focuses on realistic rendering, sculpting, visual scripting within Unreal, and is involved from storyboarding to final delivery.",
+      "date":"27 April",
+      "index":9,
+      "room":"Room 1",
+      "speaker":"Ron White",
+      "status":"Attend",
+      "time":"14:00 pm",
+      "title":"A Motion Designer and Developer Walk into a Bar"
+    }
+  ]
+}
